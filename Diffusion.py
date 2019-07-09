@@ -46,6 +46,8 @@ num_steps=500
 divisor=200
 
 L = (nx.laplacian_matrix(graph)).todense()
+#L = (nx.normalized_laplacian_matrix(G)).todense()
+
 L=np.array(L)
 E=np.linalg.eig(L)
 D=E[0]
