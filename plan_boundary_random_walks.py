@@ -128,3 +128,5 @@ def dir_bound_walk_metric(plan1, plan2):
 def bound_walk_metric(plan1, plan2):
     score = dir_bound_walk_metric(plan1, plan2) + dir_bound_walk_metric(plan2, plan1)
     return score
+
+
